@@ -1,0 +1,20 @@
+---
+version: '3'
+
+vars:
+  CLUSTER: cluster-1
+  GITHUB_USER: knee-berts
+  GITHUB_REPO: kubecon-eu-23-demo
+  GITHUB_BRANCH: main
+
+includes:
+  core:
+    taskfile: ./.taskfiles/core.yml
+    optional: false
+
+tasks:
+  flux:
+    desc: "Install Fluxv2 into a cluster"
+    cmds:
+      - task: core:secrets
+      - task: core:bootstrap

@@ -1,0 +1,4 @@
+## Used by Fluxv2 Source Controller https://toolkit.fluxcd.io/components/source/gitrepositories/#excluding-files
+
+# Exclude all by default
+/*

@@ -1,0 +1,8 @@
+# Ignore the following repositories and files
+.DS_Store
+
+# Add configuration that is encrypted
+!**/**.enc.yaml
+
+# Ignore VSCODE SOPS decrypted files
+**/.decrypted~*
